@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+
+
+* {
+  font-family: sans-serif; /* Change your font family */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-table thead tr {
+  background-color: #8b6ded;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  cursor: pointer;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #8b6ded;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.plot{
+  height: 50vh;
+  width: 55vw;
+  margin-bottom: 40px;
+}
+
+.main{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.side-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.info{
+  width: 30vw;
+  height: 20vh;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.active-cases{
+  width: 15vw;
+  height: 20vh;
+  text-align: center;
+  color: #1364e8;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.active-cases:hover{
+  background-color: #b7d0f7;
+}
+
+.recovered-cases{
+  width: 15vw;
+  height: 20vh;
+  text-align: center;
+  color: #1cad31;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.recovered-cases:hover{
+  background-color: #aff0b8;
+}
+
+.death-cases{
+  width: 15vw;
+  height: 20vh;
+  text-align: center;
+  color: #de314d;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.death-cases:hover{
+  background-color: #edb9c2;
+}
+
+.increase{
+  font-size: 0.8vw;
+  padding-bottom: 5px;
+}
+
+.head{
+  font-size: 2vw;
+  padding-top: 10px;
+}
+
+.value{
+  font-size: 1vw;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  width: 25px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.meta{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 30vw;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.state-name{
+  font-size: 2rem;
+}
+
+.states-content{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1{
+  text-align: center;
+  padding: 20px 20px;
 }
